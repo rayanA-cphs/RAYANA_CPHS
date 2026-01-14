@@ -1,14 +1,36 @@
 #box1 {background-color: red;
- animation: criss;}
+ animation: criss 10s;
+animation-fill-mode: forwards}
 
 #box2 {background-color: blue;
-animation: cross;}
+animation: cross 10s;
+animation-fill-mode: forwards}
+
+#box3 {background-color: yellow;
+animation: flip 10s;
+animation-fill-mode: forwards}
+
+#box4 {background-color: green;
+animation: flop 10s;
+animation-fill-mode: forwards}
+
+.box {position: relative; 
+height: 50px; width: 50px;
+display: inline-block}
 
 @keyframes criss {
-    from {top: 0px; left: 0px}
-    to {top: 400px; left: 500px}
+    from {top: 0px; left: 500px}
+    to {top: 400px; left: 1000px}
 }
 @keyframes cross {
-    from {top: 0px; right: 0px}
-    to {top: 400px; right: 500px}
+    from {top: 0px; left: 500px}
+    to {top: 400px; left: 0px}
+}
+@keyframes flip {
+    from {top: 0px; left: 500px}
+    to {top: 400px; left: 500px}
+}
+@keyframes flop {
+    from {top: 400px; left: 446px;}
+    to {top: 0px; left: 446px;}
 }
