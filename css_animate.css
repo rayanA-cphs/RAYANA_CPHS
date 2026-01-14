@@ -1,0 +1,14 @@
+#box1 {background-color: red;
+ animation: criss;}
+
+#box2 {background-color: blue;
+animation: cross;}
+
+@keyframes criss {
+    from {top: 0px; left: 0px}
+    to {top: 400px; left: 500px}
+}
+@keyframes cross {
+    from {top: 0px; right: 0px}
+    to {top: 400px; right: 500px}
+}
